@@ -3,6 +3,17 @@ Iterators and Generators are used to efficiently handle large
 sequential data without using much memory
 
 """
+# Let's try to create a list of 1 billion numbers.
+# BAD EXAMPLE
+
+def get_all_numbers(max_num):
+    numbers = [] # A huge list
+    for i in range(max_num):
+        numbers.append(i)
+    return numbers
+
+my_nums = get_all_numbers(1_000_000_000)
+
 
 class CustomRange:
     """

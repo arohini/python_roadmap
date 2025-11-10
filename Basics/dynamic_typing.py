@@ -17,7 +17,7 @@ def get_engine_status(signal_code):
     """get_engine_status returns the status of the engine based upon the signal code
 
     Args:
-        signal_code (_type_): 
+        signal_code (str): 
 
     Raises:
         SystemExit: when exceeding value

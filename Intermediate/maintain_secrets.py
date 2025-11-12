@@ -1,11 +1,11 @@
-class Circle:
+class Circle: #PascalCase GeometryCircle
     def __init__(self, radius):
-        self._radius = radius  # Conventionally, _ indicates a "private" attribute
+        self.__radius = radius  # Conventionally, _ indicates a "protected" attribute
 
     @property
     def radius(self):
         """The radius property."""
-        return self._radius
+        return self._radius # name mangling
 
     @radius.setter
     def radius(self, value):
